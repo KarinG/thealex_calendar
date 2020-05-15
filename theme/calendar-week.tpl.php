@@ -64,7 +64,7 @@ foreach ($day_names as $key => $value) {
         <span class="calendar-hour"><?php print t('All day', array(), array('context' => 'datetime'))?></span>
       </td>
       <?php endif; ?>
-      <?php for($j = 0; $j < 6; $j++): ?>
+      <?php for($j = 0; $j < 7; $j++): ?>
         <?php $cell = (empty($all_day[$j][$i])) ? NULL : $all_day[$j][$i]; ?>
         <?php if($cell != NULL && $cell['filled'] && $cell['wday'] == $j): ?>
           <?php for($k = $colpos; $k < $cell['wday']; $k++) : ?>
